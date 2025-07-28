@@ -1,0 +1,31 @@
+main{
+    height: 100vh;
+    display: flex;
+}
+aside.gradient{
+    height: 100%;
+    width: 483px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-image: url(/public//gradient.png);
+}
+
+div.cardFront_wrapper{
+/* margin-right: -128px; */
+}
+div.cardBack_wrapper{
+margin-left: 94px;
+}
+aside.gradient section{
+    position: absolute;
+    display: flex;
+    gap: 37px;
+    flex-direction: column;
+    left: 164px;
+}
+
+aside.white_bf{
+    flex-grow: 1;
+}

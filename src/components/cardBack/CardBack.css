@@ -1,0 +1,35 @@
+div.card_back {
+  background-image: url(/public/cardBack.png);
+  width: 447px;
+  height: 245px;
+  padding-top: 23px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 26px;
+}
+
+div.black_line {
+  width: 100%;
+  height: 54px;
+  background-color: #2f2f2f;
+}
+div.code {
+  width: 361px;
+  height: 38px;
+  border-radius: 4px;
+  background-color: #adb5be;
+  display: flex;
+  justify-content: flex-end;
+  color: white;
+  align-items: center;
+  font-weight: 500;
+  letter-spacing: 2px;
+  font-size: 14px;
+  padding-right: 16px;
+}
+.card_patterns {
+  width: 186px;
+  height: 26px;
+  background-image: url(/public/patterns.png);
+}
