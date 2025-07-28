@@ -1,31 +1,60 @@
-main{
-    height: 100vh;
-    display: flex;
+main {
+  height: 100vh;
+  display: flex;
 }
-aside.gradient{
-    height: 100%;
-    width: 483px;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    background-image: url(/public//gradient.png);
+aside.gradient {
+  height: 100%;
+  background-repeat: no-repeat;
+  width: 483px;
+  position: relative;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  background-image: url(/public//gradient.png);
 }
 
-div.cardFront_wrapper{
-/* margin-right: -128px; */
+div.cardBack_wrapper {
+  margin-left: 94px;
 }
-div.cardBack_wrapper{
-margin-left: 94px;
+aside.gradient section {
+  position: absolute;
+  display: flex;
+  gap: 37px;
+  flex-direction: column;
+  left: 164px;
 }
-aside.gradient section{
-    position: absolute;
-    display: flex;
-    gap: 37px;
+
+aside.white_bf {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 1200px) {
+    aside.gradient section {
+gap: 100px;
+  left: 100px;
+}
+}
+
+@media screen and (max-width: 1200px) {
+  main {
     flex-direction: column;
-    left: 164px;
-}
-
-aside.white_bf{
-    flex-grow: 1;
+  }
+  aside.gradient {
+    width: 100%;
+    height: 375px;
+    justify-content: center;
+  }
+  aside.gradient section {
+    position: static;
+  }
+  div.cardBack_wrapper {
+  }
+  div.cardFront_wrapper {
+    position: absolute;
+    top: 207px;
+    z-index: 1;
+  }
 }
