@@ -1,0 +1,22 @@
+div.card_front {
+  width: 447px;
+  height: 245px;
+  background-image: url(/public/cardFront.png);
+  padding: 28px 32px 26.5px 32px;
+  color: white;
+}
+div.card_front p{
+    margin: 0;
+}
+div.card_front p.card_num{
+    margin-bottom: 25px;
+    margin-top: 64px;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 100%;
+    letter-spacing: 3.42px;
+}
+div.name_date{
+    display: flex;
+    justify-content: space-between;
+}

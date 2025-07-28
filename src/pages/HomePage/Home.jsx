@@ -1,26 +1,27 @@
-import CardInfo from '../../components/cardInfo/CardInfo'
-import './Home.css'
+import CardInfo from "../../components/cardInfo/CardInfo";
+import CardFront from "../../components/cardFront/CardFront";
+import CardBack from "../../components/cardBack/CardBack";
+import "./Home.css";
 
-function Home(){
-return(
+function Home() {
+  return (
     <>
-    <main>
-        <aside className='gradient'>
-            <section>
-             <div className='cardFront_wrapper'>
-            <CardFront></CardFront>
+      <main>
+        <aside className="gradient">
+          <section>
+            <div className="cardFront_wrapper">
+              <CardFront></CardFront>
             </div>
-            <div className='cardBack_wrapper'>
-                <CardBack></CardBack>
+            <div className="cardBack_wrapper">
+              <CardBack></CardBack>
             </div>
-            
-            </section>
+          </section>
         </aside>
-        <aside className='white_bf'>
-            <CardInfo></CardInfo>
+        <aside className="white_bf">
+          <CardInfo></CardInfo>
         </aside>
-    </main>
+      </main>
     </>
-)
+  );
 }
 export default Home;
