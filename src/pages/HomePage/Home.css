@@ -31,12 +31,7 @@ aside.white_bf {
   align-items: center;
 }
 
-@media screen and (max-width: 1200px) {
-    aside.gradient section {
-gap: 100px;
-  left: 100px;
-}
-}
+
 
 @media screen and (max-width: 1200px) {
   main {
@@ -48,13 +43,33 @@ gap: 100px;
     justify-content: center;
   }
   aside.gradient section {
-    position: static;
+    position: relative;
+    gap: 100px;
+    left: 0;
+    
   }
-  div.cardBack_wrapper {
-  }
+
   div.cardFront_wrapper {
     position: absolute;
-    top: 207px;
+    top: 141px;
     z-index: 1;
+  }
+  aside.white_bf {
+  flex-grow: initial;
+  height: 100vh;
+  margin-top: 60px;
+}
+}
+
+@media screen and (max-height: 890px) {
+  aside.white_bf{
+    align-items: flex-end;
+    margin-top: 0;
+    margin-bottom: 40px;
+  }
+}
+@media screen and (max-height: 800px) {
+  aside.white_bf{
+    margin-bottom: 20px;
   }
 }
